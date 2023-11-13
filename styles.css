@@ -1,0 +1,36 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+button {
+    margin: 2% 0;
+    padding: 2%;
+    font-size: 16px;
+}
+
+#infoContainer {
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.infoDisplay {
+    width: 90%;
+    max-width: 600px;
+    padding: 4%;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 600px) {
+    .infoDisplay {
+        width: 70%;
+    }
+}
